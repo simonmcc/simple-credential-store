@@ -56,3 +56,4 @@ Of course!  There are a few areas where this could be improved:
 
 * Make creating credential sets easier, in particular the secret creation
 * Improve the "do we have a working gpg setup" validation.
+* gpg recipient is hardcoded - minor tweak required by users
