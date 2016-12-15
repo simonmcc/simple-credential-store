@@ -1,0 +1,15 @@
+export AWS=jdr
+
+export EC2_URL=https://eu-west-1.ec2.amazonaws.com
+
+export AWS_ACCESS_KEY_ID='madeupaccesskey'
+export AWS_SSH_KEY_ID='namedkeypair'
+export AWS_DEFAULT_KEYPAIR='simonm'
+export AWS_DEFAULT_REGION='eu-west-1'
+
+export EXPORT_SECRET_AS="AWS_SECRET_ACCESS_KEY"
+
+# BOILERPLATE - export the name of this file and call the common decrypt logic
+OPENRC=${BASH_SOURCE[0]:-$0}
+KIT_HOME="$( cd "$( dirname "${OPENRC}" )" && pwd )"
+. ${KIT_HOME}/decrypt-secrets.sh
